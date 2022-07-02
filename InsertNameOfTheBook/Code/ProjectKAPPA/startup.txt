@@ -1,0 +1,36 @@
+*title Kappa
+*author Pumat
+
+*comment skills
+*create diplomacy 0
+*create leadership 0
+*create riding 0
+*create archery 0
+*create melee_weapons 0
+*create knowledge 0
+*create strategy 0
+
+*comment Relations
+*create Godefroy 10
+*create Beudouin 10
+*create Tancred 10
+*create Crusaders 10
+*create Byzantines 10
+*create Church 10
+*create Outremere 10
+
+*comment Characteristics
+*create Piety 10
+*create Valor 10
+*create Virtue 10
+*create Loyalty 10
+
+*comment variables and etc.
+*create Relations ""
+*create Leaders""
+*create Characteristics""
+
+
+
+*finish
+
