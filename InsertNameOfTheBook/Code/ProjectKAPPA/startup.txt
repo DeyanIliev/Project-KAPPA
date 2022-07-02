@@ -42,6 +42,20 @@
 *create surname "surname"
 *create fullname "fullname"
 
+
+In this game you follow the steps of young crusader under the command of Tancred de Hauteville, italo-norman lord, whose maternal grandfather was the famous warrior and conqueror Robert Guiscard.
+
+Choose for what you will fight: faith and salvation, the riches of the East, loyalty to your lord and family or pure desire for adventures.
+Ingratiate yourself with the great leaders of the Crusade or make enemies with them, but beware – enmity with such powerful lords could cost you much, but their friendship may make you one of the great barons of Outremer.
+
+Follow your liege Tancred in his adventures in Byzantium, Asia Minor and the Holy Land.
+Or try to make your own mark and become one of more successful leaders, carving your own realm from the ashes of this holy war.
+Become defender of the Holy Church, great ally to the Emperor of the greeks and even paragon of knightly virtue, second only to Godfroy.
+Choose if you’ll marry for love or will you pursue marriage for the sake of advancement of your social status.
+
+Play the game and decide – how famous and respected your hero will be. What will your name be remembered for: glorious warrior, astute diplomat, sadistic powermonger or awe-inspiring adventurer.
+
+
 Your story begun in the land of:
 *fake_choice
 	#Sicily
