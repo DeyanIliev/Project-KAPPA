@@ -1,5 +1,5 @@
-*title Kappa
-*author Pumat
+*title The Sicilian story
+*author Deyan&Anton
 
 *comment skills
 *create diplomacy 0
@@ -30,7 +30,59 @@
 *create Leaders""
 *create Characteristics""
 
+*comment fundamentals
+*create gender "male"
+*create he "he"
+*create him "him"
+*create his "his"
+*create man "man"
+*create sir "sir"
+*create mr "Mr."
+*create name "name"
+*create surname "surname"
+*create fullname "fullname"
 
+Your story begun in the land of:
+*fake_choice
+	#Sicily
+		The southern lands of Italy have new masters. Your people, commonly referred to as Normans, men of the North, conquered vast swathes of land and now rule over greeks, lombards, muslims and natives.
+	
+You were born in the family of a
+
+*choice
+	#minor noble
+		Your father is a minor noble loyal to Marquis Odon, one of the great rulers in the land of Sicily
+		*set melee_weapons +1
+		*set leadership +1
+	#trader
+		Your father is a very successful wine trader. 
+		*set melee_weapons +1
+		*set diplomacy +2
+	#cleric
+		Your father is greek priest.
+		*set melee_weapons +1
+		*set knowledge +2
+	#warrior
+		Your father is part of the retinue of local lord.
+		*set strategy +1
+		*set melee_weapons +2
+	#poacher
+		Your father is an outlaw, living in the woods and hills of Sicily.
+		*set melee_weapons +1
+		*set archery +2
+	#stable-master
+		Your father is stable-master of your local lord, one of the highest positions a commoner can acquire.
+		*set archery +1
+		*set riding +2
+		
+Your parents named you
+
+*choice
+	#Robert, after the famous adventurer and warrior
+	#Odon, after their liege lord, nicknamed "The Good"
+	#Mark, after Mark the Evangelist
+	#Choose your own name
+		*input_text name
 
 *finish
 
