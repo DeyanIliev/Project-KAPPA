@@ -3,13 +3,24 @@
 	percent Godefroy
 	percent Beudouin
 	percent Tancred 
+	
 	text Relations Relations with
 	percent Crusaders 
 	percent Byzantines 
 	percent Church 
 	percent Outremere 
+	
 	text Characteristics Characteristics
 	percent Piety
 	percent Valor
 	percent Virtue
 	percent Loyalty
+	
+	text Characteristics Skills
+	text diplomacy	 
+	text leadership
+	text riding
+	text archery
+	text melee_weapons
+	text strategy
+	text knowledge
