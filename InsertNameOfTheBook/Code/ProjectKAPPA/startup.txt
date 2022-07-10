@@ -65,38 +65,117 @@ You were born in the family of a
 
 *choice
 	#minor noble
-		Your father is a minor noble loyal to Marquis Odon, one of the great rulers in the land of Sicily
+		Your father is a minor noble loyal to Marquis Odon, possessing estates in Calabria with good income. As one of the vassals of marquis your father is often expected in court, offering advice and council or to march with his liege to battle. Thanks to your upbringing as a noble, from a very young age you learned what it is to lead man, how to follow orders and how to command.
 		*set melee_weapons +1
-		*set leadership +1
+		*set leadership +2
 	#trader
-		Your father is a very successful wine trader. 
+		Your father is a very successful wine trader. The Mediterraenian sea offers great possibilities for the ones willing to brave the dangers, and great wealth too. Your sire specialized in wine trade, but his ships and caravans fill with any kind of cargo. Thanks to his connections your family have some influence in the court of your liege lord Marquis Odon, and your father is even known to offer loans for the marquis. As repayment of one such loan your father humbly requested you and your younger sibling to become part of the household of Odon, which was, surprisingly, accepted.
 		*set melee_weapons +1
 		*set diplomacy +2
 	#cleric
-		Your father is greek priest.
+		Your father is greek priest. Your family comes from Apulia. After the death of your mother, your father managed to find a place for you and your sibling in marquis Odon household, while he himself become a monk. Being from such family did little to ingratiate you with the masters of the land, as normans and greeks have great enmity between them, but you know more than most about spiritual matters. You switched from greek to latin rite and for some time it looked like you were destined for the life of a cleric, but that changed one fateful day, when the marquis decided to name you one of his young pages, although you were a bit older and from humble origin
 		*set melee_weapons +1
 		*set knowledge +2
 	#warrior
-		Your father is part of the retinue of local lord.
+		Your father is part of the retinue of local lord. He have seen many winters and almost as many battles and has great number of scars to prove it. You remember that since you were able to walk, you practiced with wooden swords and make-shift spears to fight, first as a game with your old men, later with other children. One day your liege lord, passing through the village you lived in, saw you spar with your dad and, impressed by the prowess of such a young lad of common birth, in a surprising decision demanded from your father that you join his household as a page. Your father, of course, agreed.
 		*set strategy +1
 		*set melee_weapons +2
 	#poacher
-		Your father is an outlaw, living in the woods and hills of Sicily.
+		Your father is an outlaw, living in the woods and hills of Calabria. He trained you, as soon as you’ve started to walk, how to hunt wild animals, tracking and many other things, needed for you survival. Above all else your favorite pass-time was archery, and for the young lad you are you are quite good with the bow. One day you and your father were captured by the local lord men and set for execution. The lord took pity on you and although your father was executed, you were spared the noose and even they took you as a servant in his lordship household.
 		*set melee_weapons +1
 		*set archery +2
 	#stable-master
-		Your father is stable-master of your local lord, one of the highest positions a commoner can acquire.
+		Your father is stable-master of your local lord, one of the highest positions a commoner can acquire. You were taught to ride as soon as you can barely walk. You know how to take care of horses, a prestigious skill among the nobility. Yet your fathers understanding of the nature of these noble beasts – horses – is truly uncanny. He was so valued by his lord that when your father, on his dying bed, asked your lord to take you into his service, the marquis agreed.
 		*set archery +1
 		*set riding +2
 		
+*page_break
+
+You will never forget that day, when you met for first time the Marquis’ son and heir, Tancred. Tancred’s mother was Emma d’Hauteville, sister to famous hero and conqueror Robert Guiscard. Your liege lord Marquis Odon was known as good and just ruler, one of the most respected lords of southern Italy. Tancred is named after his maternal  great-grandfather. As you will understand much later, your fate and his was intertwined and the man you become wouldn’t be the same without Tancred’s influence. But for now, let us return to that fateful day.
+
+*page_break
+
+It was, as you recall, almost a year since you have joined Odon’s household.
+		
+The marquis decided to make you a page, a great honour, and possibility, which comes with responsibilities dictating both diligence and humility. You were around 9 years old, a bit older than the usual age of 7 for most pages. 
+
+The marquis asked for you to come in the great hall. It was an odd request, as usually you rarely talked with him, being one of the many servants and also one of the youngest in the household. 
+
+The word found you in your favourite place in the manor – the kitchens
+
+When you, with great haste, arrived at the great hall, marquis Odon turned to you not by usual “boy”, so frequently used by any and all here, but with your name, which was (and still is) given by your parents:
+
+
 Your parents named you
 
-*choice
+*fake_choice
 	#Robert, after the famous adventurer and warrior
+		*set name "Robert"
 	#Odon, after their liege lord, nicknamed "The Good"
+		*set name "Odon"
 	#Mark, after Mark the Evangelist
+		*set name "Mark"
 	#Choose your own name
 		*input_text name
+
+		
+*page_break
+
+“Come here, ${name}! I have some news for you young boy, news I believe will be very welcome."
+
+“First, my sons are soon to return from visit in Sicily with count Roger, my wife’s uncle. You already know William and Robert, they only a couple years older than you. The eldest is Tancred and you are still to meet him, as he was away for more than an year. We will have a hunt and feast, to celebrate my sons return. This is where the important part for you starts. My sons have little companions around their age. Her ladyship, my wife Emma, is adamant, that I tutor them in my own castle rather than sending them to relatives. Tancred is almost at the age where he can become a squire and, God knows it, he will become a great warrior, much like his maternal uncles. Therefor I decided to take on several new pages and squires, who will act both as my servants and my boys comrades during their time as warriors-in-training. I also decided that you will join them as one of my new pages.”
+
+“Now, I know this is rather unusual, ${name}, but I grew fond of you. You show great promise for the future, you are diligent and obedient and above all else, you are taller and stronger than boys at your age, which is always a good start for future warrior. I’ve watched you and think you are just the kind of young lad my own boys will be happy to have in training, hunting and labour.”
+
+You remember you felt:
+
+*choice
+	#Pride – surely the marquis saw something in you
+		*set Valor +10
+		*goto continue
+	#Fear – you are going above your standings and the fall from grace will be much, much more painful
+		*set Piety +10
+		*goto continue
+	#Determination – it is a great honour, true, and you are sure you will be the best page a lord could ever have
+		*set Loyalty +10
+		*goto continue
+
+*label continue
+“Thank you, my lord!” – was your answer, short and emotional.
+
+“It is a great honour to be your page! Thank you!”
+
+“Alright, alright, boy. I see you’re excited. You will assume your new responsibilities as soon as my sons are home. Now, take the day off. That will be all” – said the Odon waving you at you to go and take a break. 
+
+“Thank you, marquis Odon, thank you!”
+
+*page_break
+
+As the lord said you were full with excitement and decided to:
+
+*choice
+	#Go to the servant’s quarters and tell everyone you will be a page for the marquis
+		*goto 1.1
+	#Go to the small chapel and say a prayer to the Lord and the saints asking them for guidance and protection on your path as future page
+		*goto 1.2
+	#Odon told you to take the day off, but what better way to show immediate gratitude to him, than to finish your daily labors with even greater diligence
+		*goto 1.3
+	#Maybe you can do something else, to profess your loyalty to the marquis and his family, who so graciously decided to give you such honour
+		*goto 1.4
+
+*label 1.1
+	
+*label 1.2
+	
+*label 1.3
+	
+*label 1.4
+	
+	
+
+
+
+
 
 *finish
 
